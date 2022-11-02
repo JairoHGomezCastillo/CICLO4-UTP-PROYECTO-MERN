@@ -6,13 +6,18 @@ const NavbarLinks = () => {
     <>
       <Navbar variant="light" expand="lg">
         <Container>
-          <Navbar.Brand as={Link} to="/">
-            Logotipo
+          <Navbar.Brand as={Link} to="/logo.jpg">
+            <img
+                alt="logo"
+                src="/logo.jpg"
+                width="200px"
+              />
+            
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link as={Link} to="/">
+              <Nav.Link as={Link} to="/logo.jpg">
                 Home
               </Nav.Link>
               <Nav.Link as={Link} to="/nosotros">
