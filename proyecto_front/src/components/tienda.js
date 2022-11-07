@@ -4,9 +4,6 @@ import "./tienda.css";
 const Tienda = () => {
   return (
     <div>
-      <header>
-        <a href="/">Home</a>
-      </header>
       <main>
         <h1>Listado de Productos</h1>
         <div className="productos">
