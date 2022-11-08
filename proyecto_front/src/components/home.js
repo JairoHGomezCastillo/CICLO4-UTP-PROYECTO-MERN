@@ -1,8 +1,21 @@
+import Carrusel from "./elements/carrusel"
+import Footer from "./elements/footer";
+import Body from "./elements/body";
+import "./home.css";
+
 const Home = () => { 
     return (
-        <div>
-            <h1>Home Reino Rolitos</h1>
+      <div>
+        <div className="contenedor-carrusel">
+          <Carrusel />
         </div>
-    )
+        <div className="contenedor-body">
+          <Body />
+        </div>
+        <div className="contenedor-footer">
+          <Footer />
+        </div>
+      </div>
+    );
 }
 export default Home;

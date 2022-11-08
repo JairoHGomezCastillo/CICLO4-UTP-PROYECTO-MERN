@@ -1,0 +1,19 @@
+.contenedor-carrusel{
+    justify-content: center;
+}
+
+.contenedor-body{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  font-family: sans-serif;
+  background-color: #285FB4;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.contenedor-footer{
+    margin-top: 1rem;
+}
