@@ -11,24 +11,29 @@ import Comunidad from "./components/community";
 import Contact from "./components/contactos";
 import Pagos from "./components/pagos";
 import NavbarLinks from "./layouts/navbar";
+import Details from "./components/productos/details";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<NavbarLinks />}>
-            <Route index element={<Home />} />
-            <Route path="nosotros" element={<Nosotros />} />
-            <Route path="bienestar" element={<Bienestar />} />
-            <Route path="tienda" element={<Tienda />} />
-            <Route path="communnity" element={<Comunidad />} />
-            <Route path="contactos" element={<Contact />} />
-            <Route path="pagos" element={<Pagos />} />
-            <Route path="*" element={<Navigate replace to="./" />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <div></div>
+      <div>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<NavbarLinks />}>
+              <Route index element={<Home />} />
+              <Route path="nosotros" element={<Nosotros />} />
+              <Route path="bienestar" element={<Bienestar />} />
+              <Route path="tienda" element={<Tienda />} />
+              <Route path="communnity" element={<Comunidad />} />
+              <Route path="contactos" element={<Contact />} />
+              <Route path="pagos" element={<Pagos />} />
+              <Route path="*" element={<Navigate replace to="./" />} />
+              <Route path="/producto/:slug" element={<Details />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </div>
     </div>
   );
 }

@@ -13,7 +13,7 @@ const Footer = () => {
         <CDBBox display="flex" justifyContent="between" className="flex-wrap">
           <CDBBox>
             <a href="home" className="d-flex align-items-center p-0 text-dark">
-              <img alt="logo" src="/images/logo.jpg" width="100px" />
+              <img alt="logo" src="/images/simbolo.jpg" width="100px" />
               <span className="ml-3 h5 font-weight-bold">Reino Rolitos</span>
             </a>
             <div class="row  justify-content-center">
@@ -37,8 +37,8 @@ const Footer = () => {
                 style={{ cursor: "pointer", padding: "0" }}
               >
                 <CDBFooterLink>Email: reino.rolitos@gmail.com</CDBFooterLink>
-                <CDBFooterLink>Móvil: +57 3208180558</CDBFooterLink>
-                <CDBFooterLink>Colombia</CDBFooterLink>
+                <CDBFooterLink> Móvil: +57 3208180558</CDBFooterLink>
+                <CDBFooterLink>Bogotá, Colombia</CDBFooterLink>
               </CDBBox>
             </CDBBox>
             <CDBBox>
@@ -50,15 +50,15 @@ const Footer = () => {
                 flex="column"
                 style={{ cursor: "pointer", padding: "0" }}
               >
-                <CDBFooterLink href="/">Juguetes</CDBFooterLink>
-                <CDBFooterLink href="/">Snacks</CDBFooterLink>
-                <CDBFooterLink href="/">Accesorios</CDBFooterLink>
+                <CDBFooterLink href="/tienda">Juguetes</CDBFooterLink>
+                <CDBFooterLink href="/tienda">Snacks</CDBFooterLink>
+                <CDBFooterLink href="/tienda">Accesorios</CDBFooterLink>
               </CDBBox>
             </CDBBox>
           </CDBBox>
         </CDBBox>
         <CDBBox display="flex" className="mt-4" justifyContent="between">
-          <small className="ml-2">
+          <small className="ml-2" >
             &copy; Reino Rolitos, 2022. All rights reserved.
           </small>
           <CDBBox display="flex">

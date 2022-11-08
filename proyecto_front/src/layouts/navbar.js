@@ -1,5 +1,6 @@
 import { Container, Navbar, Nav } from "react-bootstrap";
 import { Outlet, Link } from "react-router-dom";
+import "./navbar.css";
 
 const NavbarLinks = () => {
   return (
@@ -7,7 +8,7 @@ const NavbarLinks = () => {
       <Navbar variant="light" expand="lg">
         <Container>
           <Navbar.Brand as={Link} to="/">
-            Logotipo
+            <img id="brand-logo" src="/images/logo.jpg" alt=""></img>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">

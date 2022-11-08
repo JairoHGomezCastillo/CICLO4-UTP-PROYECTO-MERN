@@ -6,7 +6,7 @@ const carrusel = () => {
       <Carousel>
         <Carousel.Item>
           <img
-            className="d-block w-80"
+            className="d-block w-100"
             src="/images/rol1.jpg"
             alt="First slide"
           />
@@ -14,7 +14,7 @@ const carrusel = () => {
 
         <Carousel.Item>
           <img
-            className="d-block w-80"
+            className="d-block w-100"
             src="/images/rol2.jpg"
             alt="Second slide"
           />
@@ -22,7 +22,7 @@ const carrusel = () => {
 
         <Carousel.Item>
           <img
-            className="d-block w-80"
+            className="d-block w-100"
             src="/images/rol3.jpg"
             alt="Third slide"
           />
@@ -30,7 +30,7 @@ const carrusel = () => {
 
         <Carousel.Item>
           <img
-            className="d-block w-80"
+            className="d-block w-100"
             src="/images/rol4.jpg"
             alt="Four slide"
           />
@@ -38,7 +38,7 @@ const carrusel = () => {
 
         <Carousel.Item>
           <img
-            className="d-block w-80"
+            className="d-block w-100"
             src="/images/rol5.jpg"
             alt="Five slide"
           />
@@ -46,7 +46,7 @@ const carrusel = () => {
 
         <Carousel.Item>
           <img
-            className="d-block w-80"
+            className="d-block w-100"
             src="/images/rol6.jpg"
             alt="Six slide"
           />

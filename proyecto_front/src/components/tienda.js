@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import data from "../data/data";
+import Footer from "./elements/footer";
 import "./tienda.css";
 
 const Tienda = () => {
@@ -9,13 +11,13 @@ const Tienda = () => {
         <div className="productos">
           {data.productos.map((producto) => (
             <div className="producto" key={producto.detalle}>
-              <a href={`/producto/${producto.detalle}`}>
+              <Link to={`/producto/${producto.detalle}`}>
                 <img src={producto.imagen} alt={producto.nombre} />
-              </a>
+              </Link>
               <div className="prod-info">
-                <a href={`/producto/${producto.detalle}`}>
+                <Link to={`/producto/${producto.detalle}`}>
                   <p>{producto.nombre}</p>
-                </a>
+                </Link>
                 <p>
                   <strong>${producto.precio}</strong>
                 </p>
@@ -23,6 +25,9 @@ const Tienda = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div>
+          <Footer/>
         </div>
       </main>
     </div>

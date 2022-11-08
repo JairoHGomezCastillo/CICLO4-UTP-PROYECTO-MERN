@@ -1,3 +1,4 @@
+import Footer from "./elements/footer";
 import "./nosotros.css";
 
 const Nosotros = () => {
@@ -7,9 +8,12 @@ const Nosotros = () => {
         <h1>Nuestra Empresa</h1>
 
         <div className="contenedor-nosotros">
-
           <div className="contenedor-card">
-            <img src="/images/simbolo.jpg" class="imagen-nosotros" alt="..."></img>
+            <img
+              src="/images/simbolo.jpg"
+              class="imagen-nosotros"
+              alt="..."
+            ></img>
             <div class="informacion-nosotros">
               <h5 class="nombre-nosotros">Acerca de nosotros</h5>
               <p class="contenedor-texto-nosotros">
@@ -23,11 +27,7 @@ const Nosotros = () => {
           </div>
 
           <div className="contenedor-card">
-            <img
-              src="/images/logo.jpg"
-              class="imagen-nosotros"
-              alt="..."
-            ></img>
+            <img src="/images/logo.jpg" class="imagen-nosotros" alt="..."></img>
             <div class="informacion-nosotros">
               <h5 class="nombre-nosotros">Nuestro proposito</h5>
               <p class="contenedor-texto-nosotros">
@@ -39,7 +39,11 @@ const Nosotros = () => {
           </div>
 
           <div className="contenedor-card">
-            <img src="/images/mision.png" class="imagen-nosotros" alt="..."></img>
+            <img
+              src="/images/mision.png"
+              class="imagen-nosotros"
+              alt="..."
+            ></img>
             <div class="informacion-nosotros">
               <h5 class="nombre-nosotros">Nuestro objetivo</h5>
               <p class="contenedor-texto-nosotros">
@@ -52,6 +56,9 @@ const Nosotros = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div>
+          <Footer />
         </div>
       </main>
     </div>
