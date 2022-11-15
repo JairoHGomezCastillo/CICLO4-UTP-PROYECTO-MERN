@@ -39,3 +39,17 @@ code {
 .row{
   float: right;
 }
+
+.contactenos{
+
+  background-color: #285FB4;
+  height: 65vh;
+  margin: 15%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  color: #fff;
+  font-size: 18px; 
+}
+
