@@ -43,8 +43,7 @@ code {
 .contactenos{
 
   background-color: #285FB4;
-  height: 65vh;
-  margin: 15%;
+  height: 65vh;    
   margin-top: 50px;
   display: flex;
   align-items: center;
@@ -52,4 +51,5 @@ code {
   color: #fff;
   font-size: 18px; 
 }
+
 
