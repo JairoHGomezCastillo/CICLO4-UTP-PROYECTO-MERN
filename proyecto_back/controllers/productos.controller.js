@@ -8,12 +8,14 @@ exports.create = function (req, res) {
   let producto = new Producto({
     nombre: req.body.nombre,
     detalle: req.body.detalle,
+    categoria: req.body.categoria,
+    imagen: req.body.imagen,
     precio: req.body.precio,
     stock: req.body.stock,
     marca: req.body.marca,
-    categoria: req.body.categoria,
+    clasificacion: req.body.clasificacion,
     referencia: req.body.referencia,
-    imagen: req.body.imagen,
+    descripcion: req.body.descripcion,
   });
 
   producto.save(function (err) {
@@ -26,7 +28,7 @@ exports.create = function (req, res) {
     }
 
     (response.exito = true),
-      (response.msg = "El producto se guardó correctamente");
+      (response.msg = "El producto "+producto.nombre+" se guardó correctamente");
     res.json(response);
   });
 };
@@ -53,12 +55,14 @@ exports.update = function (req, res) {
   let producto = {
     nombre: req.body.nombre,
     detalle: req.body.detalle,
+    categoria: req.body.categoria,
+    imagen: req.body.imagen,
     precio: req.body.precio,
     stock: req.body.stock,
     marca: req.body.marca,
-    categoria: req.body.categoria,
+    clasificacion: req.body.clasificacion,
     referencia: req.body.referencia,
-    imagen: req.body.imagen,
+    descripcion: req.body.descripcion,
   };
 
   Producto.findByIdAndUpdate(req.params.id, { $set: producto }, function (err) {
@@ -70,7 +74,7 @@ exports.update = function (req, res) {
       return;
     }
 
-    (response.exito = true), (response.msg = "El producto modifico correctamente");
+    (response.exito = true), (response.msg = "El producto "+producto.nombre +" modifico correctamente");
     res.json(response);
   });
 };

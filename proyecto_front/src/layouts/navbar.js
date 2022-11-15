@@ -19,13 +19,10 @@ const NavbarLinks = () => {
               <Nav.Link as={Link} to="/nosotros">
                 Nosotros
               </Nav.Link>
-              <Nav.Link as={Link} to="/bienestar">
-                Bienestar
-              </Nav.Link>
               <Nav.Link as={Link} to="/tienda">
                 Tienda
               </Nav.Link>
-              <Nav.Link as={Link} to="/community">
+              <Nav.Link as={Link} to="/comunidad">
                 Comunidad Rolitos
               </Nav.Link>
               <Nav.Link as={Link} to="/contactos">
