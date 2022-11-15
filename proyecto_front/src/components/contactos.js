@@ -8,7 +8,7 @@ const Contact = () => {
       <Form className="contactenos">
         
         <Figure className="col 1">
-          <Figure.Image width={400}  src="/rol7.png"/>
+          <Figure.Image width={400}  src="/rol7.jpg"/>
         </Figure>
 
         <Col sm={5} >
