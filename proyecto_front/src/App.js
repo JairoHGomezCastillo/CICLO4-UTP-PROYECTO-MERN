@@ -9,7 +9,7 @@ import Nosotros from "./components/nosotros";
 import Bienestar from "./components/bienestar";
 import Tienda from "./components/tienda";
 import Comunidad from "./components/comunidad";
-import Contact from "./components/contactos";
+import Contactos from "./components/contactos";
 import Pagos from "./components/pagos";
 import NavbarLinks from "./layouts/navbar";
 import Details from "./components/productos/details";
@@ -29,7 +29,7 @@ function App() {
               <Route path="bienestar" element={<Bienestar />} />
               <Route path="tienda" element={<Tienda />} />
               <Route path="comunidad" element={<Comunidad />} />
-              <Route path="contactos" element={<Contact />} />
+              <Route path="contactos" element={<Contactos />} />
               <Route path="pagos" element={<Pagos />} />
               <Route path="*" element={<Navigate replace to="./" />} />
               <Route path="/producto/:slug" element={<Details />} />

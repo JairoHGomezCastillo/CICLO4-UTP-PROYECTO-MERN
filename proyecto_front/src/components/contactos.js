@@ -1,8 +1,8 @@
 import React from "react";
 import { Form, Button, Col, Figure } from "react-bootstrap";
-import Footer from "./footer";
+import Footer from "./elements/footer";
 
-const Contact = () => {
+const Contactos = () => {
   return (
     <div>
       <Form className="contactenos">
@@ -43,4 +43,4 @@ const Contact = () => {
     </div>
   );
 };
-export default Contact;
+export default Contactos;
