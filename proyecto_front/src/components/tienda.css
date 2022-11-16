@@ -9,12 +9,13 @@ main img{
 }
 
 .producto{
-    border: 1px #404040 solid;
+    /* border: 1px #f0e9e9 solid; */
     margin: 1rem;
 }
 .producto img{
-    width: 100%;
+    width: 80%;
     max-width: 400px;
+    height: 15rem;
 }
 
 .prod-info{

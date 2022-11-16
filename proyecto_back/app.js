@@ -5,6 +5,7 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var database = require("./config/database");
 var auth = require("./auth/main_auth");
+var cors = require("cors");
 
 var clientesRouter = require("./routes/clientes.router");
 var productosRouter = require("./routes/productos.router");
@@ -18,12 +19,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
+app.use(cors());
+
 //mongo connect
 database.mongoConnect();
 
 app.use("/usuarios", usuariosRouter);
 
-app.use(auth);
+// app.use(auth);
 
 //routers
 app.use("/clientes", clientesRouter);

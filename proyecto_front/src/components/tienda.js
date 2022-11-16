@@ -1,15 +1,25 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import data from "../data/data";
+import axios from "axios";
+// import data from "../data/data";
 import Footer from "./elements/footer";
 import "./tienda.css";
 
 const Tienda = () => {
+  const [productos, setProductos] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios.get("/productos");
+      setProductos(result.data);
+    };
+    fetchData();
+  }, []);
   return (
     <div>
       <main>
         <h1>Listado de Productos</h1>
         <div className="productos">
-          {data.productos.map((producto) => (
+          {productos.map((producto) => (
             <div className="producto" key={producto.detalle}>
               <Link to={`/producto/${producto.detalle}`}>
                 <img src={producto.imagen} alt={producto.nombre} />
@@ -27,7 +37,7 @@ const Tienda = () => {
           ))}
         </div>
         <div>
-          <Footer/>
+          <Footer />
         </div>
       </main>
     </div>
