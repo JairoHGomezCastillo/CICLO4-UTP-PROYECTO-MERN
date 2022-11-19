@@ -2,7 +2,7 @@ const data = {
   productos: [
     {
       nombre: "Varitas",
-      detalle: "varitas-perros",
+      detalle: "varitas-perro",
       categoria: "Snacks",
       imagen: "/images/tienda/p1.jpg", //679px x 829px
       precio: 15000,

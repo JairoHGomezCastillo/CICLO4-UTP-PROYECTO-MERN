@@ -39,18 +39,6 @@ exports.find = function (req, res) {
   });
 };
 
-exports.findOne = function (req, res) {
-  Producto.findOne({ _id: req.params.id }, function (err, producto) {
-    res.json(producto);
-  });
-};
-
-exports.findOne = function (req, res) {
-  Producto.findOne({ nombre: req.params.nombre }, function (err, producto) {
-    res.json(producto);
-  });
-};
-
 exports.update = function (req, res) {
   let producto = {
     nombre: req.body.nombre,
@@ -92,5 +80,11 @@ exports.remove = function (req, res) {
     (response.exito = true),
       (response.msg = "El producto eliminado correctamente");
     res.json(response);
+  });
+};
+
+exports.findOne = function (req, res) {
+  Producto.findOne({ detalle: req.params.detalle }, function (err, producto) {
+    res.json(producto);
   });
 };

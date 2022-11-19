@@ -1,10 +1,11 @@
 import { useEffect, useReducer } from "react";
-import { Link } from "react-router-dom";
 import axios from "axios";
 import logger from "use-reducer-logger";
 // import data from "../data/data";
 import Footer from "./elements/footer";
 import "./tienda.css";
+import { Row, Col } from "react-bootstrap";
+import Producto from "./elements/producto";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -53,22 +54,13 @@ const Tienda = () => {
           ) : error ? (
             <div>{error}</div>
           ) : (
-            productos.map((producto) => (
-              <div className="producto" key={producto.detalle}>
-                <Link to={`/producto/${producto.detalle}`}>
-                  <img src={producto.imagen} alt={producto.nombre} />
-                </Link>
-                <div className="prod-info">
-                  <Link to={`/producto/${producto.detalle}`}>
-                    <p>{producto.nombre}</p>
-                  </Link>
-                  <p>
-                    <strong>${producto.precio}</strong>
-                  </p>
-                  <button>Agregar al carrito</button>
-                </div>
-              </div>
-            ))
+            <Row>
+              {productos.map((producto) => (
+                <Col key={producto.detalle} sm={6} md={4} lg={3} className="mb-3">
+                  <Producto producto={producto}></Producto>
+                </Col>
+              ))}
+            </Row>
           )}
         </div>
         <div>

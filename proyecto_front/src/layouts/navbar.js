@@ -5,7 +5,7 @@ import "./navbar.css";
 const NavbarLinks = () => {
   return (
     <>
-      <Navbar variant="light" expand="lg">
+      <Navbar bg="primary" variant="dark">
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img id="brand-logo" src="/images/logo.jpg" alt=""></img>
