@@ -15,3 +15,7 @@ code {
 .rating span {
   color: #ffc000;
 }
+
+.img-thumbnail {
+  height: 80px;
+}

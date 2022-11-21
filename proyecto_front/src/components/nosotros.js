@@ -6,7 +6,6 @@ const Nosotros = () => {
     <div>
       <main>
         <h1>Nuestra Empresa</h1>
-
         <div className="contenedor-nosotros">
           <div className="contenedor-card">
             <img

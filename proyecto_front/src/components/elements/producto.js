@@ -21,7 +21,6 @@ function Producto(props) {
         </Link>
         <Rating rating={producto.clasificacion} />
         <Card.Text>${producto.precio}</Card.Text>
-        <Button>Agregar al carrito</Button>
       </Card.Body>
     </Card>
   );

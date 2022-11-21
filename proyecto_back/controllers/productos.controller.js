@@ -39,6 +39,12 @@ exports.find = function (req, res) {
   });
 };
 
+exports.findId = function (req, res) {
+  Producto.findOne({ _id: req.params.id }, function (err, producto) {
+    res.json(producto);
+  });
+};
+
 exports.update = function (req, res) {
   let producto = {
     nombre: req.body.nombre,
@@ -83,8 +89,14 @@ exports.remove = function (req, res) {
   });
 };
 
+
 exports.findOne = function (req, res) {
   Producto.findOne({ detalle: req.params.detalle }, function (err, producto) {
-    res.json(producto);
+    if (producto) {
+       res.json(producto);
+    } else {
+      res.status(404).send({ message: "Detalle Producto No encontrado" });
+    }
   });
 };
+
