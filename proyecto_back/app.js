@@ -27,6 +27,11 @@ database.mongoConnect();
 app.use("/usuarios", usuariosRouter);
 
 //app.use(auth);
+const __dirname = path.resolve();
+app.use(express.static(path.join(__dirname, "/proyecto_front/build")));
+app.get("*", (req, res) =>
+  res.sendFile(path.join(__dirname, "/proyecto_front/build/index.html"))
+);
 
 //routers
 app.use("/clientes", clientesRouter);
