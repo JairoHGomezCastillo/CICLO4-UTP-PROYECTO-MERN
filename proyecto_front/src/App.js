@@ -14,6 +14,7 @@ import Pagos from "./components/pagos";
 import NavbarLinks from "./layouts/navbar";
 import Details from "./components/productos/details";
 import Carrito from "./components/elements/carrito";
+import Login from "./components/elements/login";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
               <Route path="*" element={<Navigate replace to="./" />} />
               <Route path="/producto/:slug" element={<Details />} />
               <Route path="/cart" element={<Carrito />} />
+              <Route path="/signin" element={<Login />} />
             </Route>
           </Routes>
         </BrowserRouter>

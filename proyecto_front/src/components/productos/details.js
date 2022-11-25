@@ -123,7 +123,7 @@ function Details() {
                     <ListGroup.Item>
                       <div className="d-grid">
                         <Button onClick={addToCartHandler} variant="primary">
-                          Agregar Carrito
+                          Agregar al Carrito
                         </Button>
                       </div>
                     </ListGroup.Item>

@@ -26,7 +26,7 @@ database.mongoConnect();
 
 app.use("/usuarios", usuariosRouter);
 
-// app.use(auth);
+//app.use(auth);
 
 //routers
 app.use("/clientes", clientesRouter);
