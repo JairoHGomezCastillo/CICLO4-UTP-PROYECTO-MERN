@@ -18,8 +18,8 @@
     "url": "https://github.com/JairoHGomezCastillo/CICLO4-UTP-PROYECTO-MERN/issues"
   },
   "engines": {
-  "node": "18.x",
-  "npm": "4.x"
+  "node": "11.x",
+  "npm": "6.x"
   },
   "homepage": "https://github.com/JairoHGomezCastillo/CICLO4-UTP-PROYECTO-MERN#readme"
 }
