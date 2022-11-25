@@ -1,0 +1,25 @@
+{
+  "name": "reinorolitos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd proyecto_back && npm install  && cd ../proyecto_front && npm install && npm run build",
+    "start": "node proyecto_back/www.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JairoHGomezCastillo/CICLO4-UTP-PROYECTO-MERN.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JairoHGomezCastillo/CICLO4-UTP-PROYECTO-MERN/issues"
+  },
+  "engines": {
+  "node": "18.x",
+  "npm": "7.x"
+  },
+  "homepage": "https://github.com/JairoHGomezCastillo/CICLO4-UTP-PROYECTO-MERN#readme"
+}
