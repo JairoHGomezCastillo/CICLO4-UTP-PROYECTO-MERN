@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "cd proyecto_back && npm install  && cd ../proyecto_front && npm install && npm run build",
-    "start": "node proyecto_back/bin/www.js",
+    "start": "node proyecto_back/bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
