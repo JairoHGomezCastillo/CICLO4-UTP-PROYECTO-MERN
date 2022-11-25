@@ -1,0 +1,46 @@
+.blogR{
+    box-shadow: 8px 8px 10px 0px #285FB4, -5px -5px 5px 0px #285FB4,
+      5px 5px 15px 0px green;
+    
+  
+    border-radius: 2px;
+    
+}
+
+.gatoimage{
+    margin-top: 0.5%;
+    width: 1300px;
+    height: 320px;    
+}
+.img2{
+    
+    margin-top: 1%;    
+    width: 100%;
+    height: 250px;    
+}
+.contaComunidad{
+    list-style-type: none;
+    margin: 10;
+    margin-top: 3%;
+    justify-content: center;
+    
+    
+}
+.react-player{
+    
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+.txt1{
+    margin-top: 5%;
+    align-items: justify;
+    justify-content: justify;
+    text-align: justify;
+}
+.link{
+    color: #285FB4;
+    text-decoration:none;
+    box-shadow: inset 0 -3px 0 0 #285FB4;
+        
+}
